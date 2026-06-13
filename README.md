@@ -105,26 +105,106 @@ The scraper reads URLs from the file and loads them into the input field automat
 
 ## Setup
 
-### Requirements
+### System Requirements
 
-- Python 3.9 or newer
+- Python 3.9 or newer — [python.org/downloads](https://www.python.org/downloads/)
 - Google Chrome installed
 - Windows operating system
 - Active internet connection
 
-### Install Dependencies
+---
+
+### Dependencies
+
+| Library | Version | Purpose |
+|---|---|---|
+| `selenium` | >= 4.0.0 | Controls Chrome to navigate and extract data from the website |
+| `openpyxl` | >= 3.0.0 | Creates and formats the Excel output file |
+| `pandas` | >= 1.3.0 | Handles data processing and CSV / Excel URL imports |
+| `tkinter` | Bundled with Python | Powers the desktop GUI — no separate install needed |
+
+---
+
+### Installing Dependencies in PyCharm
+
+**Step 1 — Open the Terminal**
+
+At the bottom of the PyCharm window, click the **Terminal** tab.
+If it is not visible, go to: `View` → `Tool Windows` → `Terminal`
+
+**Step 2 — Confirm you are in the project folder**
+
+The terminal should show the path to your project directory. If not, navigate there:
+
+```bash
+cd path\to\your\project
+```
+
+**Step 3 — Install the libraries**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run
+**Step 4 — Run the application**
 
 ```bash
 python Foreclosure scraper.py
 ```
 
-Works in both **PyCharm** and **Visual Studio Code**.
+---
+
+### Installing Dependencies in Visual Studio Code
+
+**Step 1 — Open the Terminal**
+
+Go to the top menu: `Terminal` → `New Terminal`
+
+A terminal panel will open at the bottom of the screen.
+
+**Step 2 — Confirm you are in the project folder**
+
+VS Code usually opens the terminal in your project folder automatically. Verify the path shown matches your project. If not:
+
+```bash
+cd path\to\your\project
+```
+
+**Step 3 — Install the libraries**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4 — Run the application**
+
+```bash
+python Foreclosure scraper.py
+```
+
+---
+
+### Installing Libraries One by One (Optional)
+
+If you prefer to install each library individually rather than using the requirements file:
+
+```bash
+pip install selenium
+pip install openpyxl
+pip install pandas
+```
+
+---
+
+### Verifying the Installation
+
+To confirm all libraries installed correctly, run:
+
+```bash
+pip show selenium openpyxl pandas
+```
+
+Each library should display its name and version. If any are missing, re-run the install command for that specific package.
 
 ---
 
