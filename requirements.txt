@@ -1,0 +1,60 @@
+# ============================================================
+#  Brock & Scott Foreclosure Sales Scraper
+#  Python Dependencies
+# ============================================================
+#
+#  HOW TO INSTALL
+#  -------------------------------------------------------
+#  Open the terminal in PyCharm or Visual Studio Code
+#  and run the following command:
+#
+#      pip install -r requirements.txt
+#
+# ============================================================
+
+
+# -------------------------------------------------------
+#  PyCharm — Terminal Setup
+# -------------------------------------------------------
+#  1. Open PyCharm
+#  2. Click "Terminal" at the bottom of the window
+#     (or go to View > Tool Windows > Terminal)
+#  3. Make sure the terminal shows your project folder
+#  4. Run:  pip install -r requirements.txt
+#  5. Once done, run:  python app.py
+
+
+# -------------------------------------------------------
+#  Visual Studio Code — Terminal Setup
+# -------------------------------------------------------
+#  1. Open VS Code
+#  2. Go to Terminal > New Terminal from the top menu
+#  3. Make sure the terminal shows your project folder
+#  4. Run:  pip install -r requirements.txt
+#  5. Once done, run:  python app.py
+
+
+# -------------------------------------------------------
+#  Verify Installation (Optional)
+# -------------------------------------------------------
+#  After installing, confirm everything is set up correctly:
+#
+#      pip show selenium openpyxl pandas
+#
+#  Each library should display its name and installed version.
+# -------------------------------------------------------
+
+
+# Browser Automation
+selenium>=4.0.0
+
+# Excel File Creation and Formatting
+openpyxl>=3.0.0
+
+# Data Handling and CSV / Excel Import
+pandas>=1.3.0
+
+# Desktop GUI (Tkinter is bundled with Python 3.9+)
+# If tkinter is missing, reinstall Python from python.org
+# and make sure "tcl/tk" is checked during installation.
+tk>=0.1.0
